@@ -41,7 +41,14 @@ if(document.querySelector('.portfolio-body')) {
 
 	});
 }
-document.addEventListener("touchstart", function(){}, true);
+var hovs = document.querySelectorAll('a');
+for(i=0;i<hovs.length;i++) {
+	hovs[i].onclick = function() {
+
+		hovs[i].onhover.call(hovs[i]);
+	};
+}
+
 if(document.querySelector('.skills .skills-list')) {
 // Get all the Meters
 const meters = document.querySelectorAll('svg[data-value] .meter');

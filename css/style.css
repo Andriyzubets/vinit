@@ -2145,11 +2145,7 @@ a.button1:hover {
 .sandwich-right-bar .right-menu li {
 	text-align: center;
 }
-element:hover, element:active {
--webkit-tap-highlight-color: rgba(0,0,0,0);
--webkit-user-select: none;
--webkit-touch-callout: none;
-}
+
 @media screen and (max-width: 1500px) {
 	.header-fixed .main-menu {
 		height: 70px;
@@ -2496,6 +2492,7 @@ element:hover, element:active {
 	.preheader {
 		height: 91vh;
 	}
+	
 }
 @media screen and (max-width: 660px) {
 	body {
