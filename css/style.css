@@ -2536,7 +2536,7 @@ a.button1:hover {
 	}
 }
 @media screen and (max-width: 660px) {
-	body {
+	body, body.portfolio-body {
 		background: #ffffff url(../img/tech_back.png) 50% no-repeat;
 		background-size: cover;
 	}
