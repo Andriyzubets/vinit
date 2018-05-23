@@ -18,7 +18,7 @@ if(document.querySelector('.index-body .preheader')) {
 	}
 	if(document.body.clientWidth<=768) {
 		head = parseInt(window.getComputedStyle(document.querySelector('.preheader'), null).height) - parseInt(window.getComputedStyle(document.querySelector('.header'), null).height) - 60;
-		document.querySelector('.header').style.top=head+'px'; 
+		document.querySelector('.header').style.paddingTop=head+'px'; 
 	}
 	menu = parseInt(window.getComputedStyle(document.querySelector('.preheader'), null).height) - parseInt(window.getComputedStyle(document.querySelector('.header'), null).height) - parseInt(window.getComputedStyle(document.querySelector('.main-menu'), null).height);
 
