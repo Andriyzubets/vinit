@@ -2369,6 +2369,9 @@ a.button1:hover {
 	}
 }
 @media screen and (max-width: 768px) {
+	.preloader {
+		display: none;
+	}
 	.about .ideas h3 {
 		font-size: 26px;
 	}
