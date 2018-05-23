@@ -2492,7 +2492,9 @@ a.button1:hover {
 	.preheader {
 		height: 91vh;
 	}
-	
+	.sandwich-right-bar .right-menu a:hover:before {
+		width: 0;
+	}
 }
 @media screen and (max-width: 660px) {
 	body {
