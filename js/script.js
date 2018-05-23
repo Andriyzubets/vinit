@@ -17,7 +17,7 @@ if(document.querySelector('.index-body .preheader')) {
 		document.querySelector('.header').style.top=head+'px'; 
 	}
 	if(document.body.clientWidth<=768) {
-		head = parseInt(window.getComputedStyle(document.querySelector('.preheader'), null).height) - parseInt(window.getComputedStyle(document.querySelector('.header'), null).height) - 120;
+		head = parseInt(window.getComputedStyle(document.querySelector('.preheader'), null).height) - parseInt(window.getComputedStyle(document.querySelector('.header'), null).height) - 60;
 		document.querySelector('.header').style.top=head+'px'; 
 	}
 	menu = parseInt(window.getComputedStyle(document.querySelector('.preheader'), null).height) - parseInt(window.getComputedStyle(document.querySelector('.header'), null).height) - parseInt(window.getComputedStyle(document.querySelector('.main-menu'), null).height);

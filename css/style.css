@@ -1777,8 +1777,8 @@ a.button1:hover {
 	transition: all .4s ease-in-out;
 	top: 0;
 	z-index: 99;
-	    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
 }
 .sandwich-right-bar .right-menu.active {
@@ -2031,13 +2031,16 @@ a.button1:hover {
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
+	.preheader {
+		height: 91vh;
+	}
 }
 @media screen and (max-width: 660px) {
 	body {
-		background-attachment: local;
-		-webkit-background-size: contain;
-		background-size: contain;
+		background-size: cover;
+		background-position: 20% 0%;
 	}
+
 	.advantage {
 		padding: 40px 0;
 	}
