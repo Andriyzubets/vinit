@@ -41,7 +41,7 @@ if(document.querySelector('.portfolio-body')) {
 
 	});
 }
-
+document.addEventListener("touchstart", function(){}, true);
 if(document.querySelector('.skills .skills-list')) {
 // Get all the Meters
 const meters = document.querySelectorAll('svg[data-value] .meter');
