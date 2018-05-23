@@ -29,8 +29,8 @@ body.portfolio-body {
 	left: 0;
 	z-index: 101;
 	background: #fff;
-	opacity: 0;
-	visibility: hidden;
+	opacity: 1;
+	visibility: visible;
 }
 svg.intro {
 	/*background: linear-gradient(135deg, #aa3bb1, #582a7e);*/
