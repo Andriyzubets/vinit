@@ -2498,8 +2498,8 @@ a.button1:hover {
 }
 @media screen and (max-width: 660px) {
 	body {
+		background: #ffffff url(../img/tech_back.png) 50% no-repeat;
 		background-size: cover;
-		background-position: 20% 0%;
 	}
 
 	.advantage {
