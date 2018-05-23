@@ -26,7 +26,7 @@ if(document.querySelector('.index-body .preheader')) {
 	window.addEventListener('scroll', function() {
 		scroll = window.pageYOffset || document.documentElement.scrollT;
 		scr = scroll > menu ? document.querySelector('.header').classList.add('header-fixed') : document.querySelector('.header').classList.remove('header-fixed');
-
+		sandOp = scroll > 50 ? document.querySelector('.sandwich-right-bar .nav-toggle').classList.add('op') : document.querySelector('.sandwich-right-bar .nav-toggle').classList.remove('op');
 	});
 }
 if(document.querySelector('.portfolio-body')) {
@@ -38,7 +38,7 @@ if(document.querySelector('.portfolio-body')) {
 	window.addEventListener('scroll', function() {
 		scroll = window.pageYOffset || document.documentElement.scrollTt;
 		scr = scroll > menuPort ? document.querySelector('.header').classList.add('header-port-fixed') : document.querySelector('.header').classList.remove('header-port-fixed');
-
+		sandOp = scroll > 50 ? document.querySelector('.sandwich-right-bar .nav-toggle').classList.add('op') : document.querySelector('.sandwich-right-bar .nav-toggle').classList.remove('op');
 	});
 }
 
@@ -141,8 +141,8 @@ if (document.querySelector('.sandwich-right-bar .nav-toggle')) {
 
 }
 let sandwichButton = document.querySelector('.sandwich-right-bar .nav-toggle');
-	let sandFullMenu = document.querySelector('.sandwich-right-bar .right-menu');
-	let sandwichBg = document.querySelector('.sandwich-right-bar .sandBg');
+let sandFullMenu = document.querySelector('.sandwich-right-bar .right-menu');
+let sandwichBg = document.querySelector('.sandwich-right-bar .sandBg');
 function closeAll() {
 	sandwichButton.classList.remove('active');
 	sandFullMenu.classList.remove('active');
