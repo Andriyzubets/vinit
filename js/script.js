@@ -138,10 +138,19 @@ if (document.querySelector('.sandwich-right-bar .nav-toggle')) {
 		sandFullMenu.classList.remove('active');
 		sandwichBg.classList.remove('active');
 	}
-}
 
+}
+let sandwichButton = document.querySelector('.sandwich-right-bar .nav-toggle');
+	let sandFullMenu = document.querySelector('.sandwich-right-bar .right-menu');
+	let sandwichBg = document.querySelector('.sandwich-right-bar .sandBg');
+function closeAll() {
+	sandwichButton.classList.remove('active');
+	sandFullMenu.classList.remove('active');
+	sandwichBg.classList.remove('active');
+}
 // Плавный скрол
 function anchorScroller(el, duration) {
+
 	if (this.criticalSection) {
 		return false;
 	}
@@ -170,6 +179,7 @@ function anchorScroller(el, duration) {
 	do {
 		this.stopX += el.offsetLeft;
 		this.stopY += el.offsetTop;
+		closeAll();
 	} while (el = el.offsetParent);
 
 	this.startX = document.documentElement.scrollLeft || window.pageXOffset || document.body.scrollLeft;
